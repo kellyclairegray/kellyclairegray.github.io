@@ -1,0 +1,50 @@
+/* Paragraph Font */
+p {  
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin: 10px 0 10px 0;
+}
+
+/* Body Font */
+body {
+	margin: 5px;
+	border: solid;
+	border-width: 2px;
+	padding: 10px;
+	background-color: white;
+	
+
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/* Page Title Font */
+.pageTitle {
+
+	text-align: center;
+	margin: 10px;
+	background-color: white;
+	border: solid;
+	/*background-image: url(images/sound_background.jpg);*/
+}
+
+/* Navbar Font */
+#navbarID {
+
+	font-family: Garamond, Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+	border-style: none;
+	justify-content: space-between;
+	word-wrap: normal;
+	
+}
+
+.navbarItem {
+
+	font-size: 22px;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	color: black;
+
+}
+
