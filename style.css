@@ -1,20 +1,17 @@
 /* Paragraph Font */
 p {  
-	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	margin: 10px 0 10px 0;
 }
 
 /* Body Font */
 body {
 	margin: 5px;
-	/*border: solid;
-	border-width: 2px;*/
+	border: solid;
+	border-width: 2px;
 	padding: 10px;
 	background-color: white;
-	
 
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 }
 
 /* Page Title Font */
@@ -23,7 +20,6 @@ body {
 	text-align: center;
 	margin: 10px;
 	background-color: white;
-	/*border: solid;*/
 }
 
 /* Navbar Font */
@@ -42,8 +38,6 @@ body {
 	font-size: 22px;
 	padding-left: 30px;
 	padding-right: 30px;
-
-	color: black;
 
 }
 
