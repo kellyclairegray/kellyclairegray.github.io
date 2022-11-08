@@ -1,14 +1,14 @@
 /* Paragraph Font */
 p {  
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	margin: 10px 0 10px 0;
 }
 
 /* Body Font */
 body {
 	margin: 5px;
-	border: solid;
-	border-width: 2px;
+	/*border: solid;
+	border-width: 2px;*/
 	padding: 10px;
 	background-color: white;
 	
@@ -23,8 +23,7 @@ body {
 	text-align: center;
 	margin: 10px;
 	background-color: white;
-	border: solid;
-	/*background-image: url(images/sound_background.jpg);*/
+	/*border: solid;*/
 }
 
 /* Navbar Font */
