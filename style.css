@@ -11,12 +11,11 @@ body {
 	border-width: 2px;
 	padding: 10px;
 	background-color: white;
-
 }
 
 /* Page Title Font */
 .pageTitle {
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	text-align: center;
 	margin: 10px;
 	background-color: white;
@@ -25,7 +24,7 @@ body {
 /* Navbar Font */
 #navbarID {
 
-	font-family: Garamond, Georgia, 'Times New Roman', Times, serif;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	text-align: center;
 	border-style: none;
 	justify-content: space-between;
