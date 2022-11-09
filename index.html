@@ -23,25 +23,36 @@
 
         <!--Slideshow of Images-->
         <div class="slideshow-container">
-            <div class="slides">
+            <div class="slides fade">
+                <div class="number">1/3</div>
                 <img src="https://github.com/kellyclairegray/kellyclairegray.github.io/blob/main/Rosalind_Franklin_(1920-1958).jpg" style="width:100%">
+            </div>
+            <div class="slides fade">
+                <div class="number">2/3</div>
                 <img src="https://github.com/kellyclairegray/kellyclairegray.github.io/blob/main/Lise-Meitner.jpg" style="width:100%">
+            </div>
+            <div class="slides fade">
+                <div class="number">3/3</div>
                 <img src="https://github.com/kellyclairegray/kellyclairegray.github.io/blob/main/Katherine-Johnson.jpg" style="width:100%">
             </div>
-            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="prev" onclick="plusSlides(-1)"></a>   <!--next and previous buttons-->
             <a class="next" onclick="plusSlides(1)"></a>
         </div>
+
+        <!--create the dots under-->
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
         <script>
-            var slideNum = 1;
+            let slideNum = 1;
             showSlides(slideNum);
+            //to go to next image
             function plusSlides(n) {
                 showSlides(slideNum += n);
             }
+            //show current image
             function currentSlide(n) {
                 showSlides(slideNum = n);
             }
