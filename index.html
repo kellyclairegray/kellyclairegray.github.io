@@ -5,19 +5,62 @@
         <title>Women in STEM</title>                        <!-- Website title-->
         <link rel="stylesheet" href="style.css" />          <!-- Link to stylesheet-->
     </head>
-    <body>                                                  <!-- BODY TAG -->
+    <body>
+        <!-- BODY TAG -->
 
-        <h1 class=" pageTitle" > WOMEN IN STEM </h1>
-       
-        <div id="navbarID">                                 <!-- NAVBAR -->
-    
+        <h1 class=" pageTitle"> WOMEN IN STEM </h1>
+
+        <div id="navbarID">
+            <!-- NAVBAR -->
+
             <p>
-                <a class ="navbarItem" href="index.html">Home</a> 
-                <a class ="navbarItem" href="interact.html">Interact</a> 
-                <a class= "navbarItem" href="resources.html">Resources</a>
-                <a class ="navbarItem" href="about.html">About</a>
+                <a class="navbarItem" href="index.html">Home</a>
+                <a class="navbarItem" href="interact.html">Interact</a>
+                <a class="navbarItem" href="resources.html">Resources</a>
+                <a class="navbarItem" href="about.html">About</a>
             </p>
         </div>
+
+        <!--Slideshow of Images-->
+        <div class="slideshow-container">
+            <div class="slides">
+                <img src="https://github.com/kellyclairegray/kellyclairegray.github.io/blob/main/Rosalind_Franklin_(1920-1958).jpg" style="width:100%">
+                <img src="https://github.com/kellyclairegray/kellyclairegray.github.io/blob/main/Lise-Meitner.jpg" style="width:100%">
+                <img src="https://github.com/kellyclairegray/kellyclairegray.github.io/blob/main/Katherine-Johnson.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="next" onclick="plusSlides(1)"></a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+            var slideNum = 1;
+            showSlides(slideNum);
+            function plusSlides(n) {
+                showSlides(slideNum += n);
+            }
+            function currentSlide(n) {
+                showSlides(slideNum = n);
+            }
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("slides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideNum = 1 }
+                if (n < 1) { slideNum = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace("active", "");
+                }
+                slides[slideNum - 1].style.display = "block";
+                dots[slideNum - 1].className += "active";
+            }
+        </script>
 
     </body>
 </html>
