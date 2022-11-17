@@ -166,30 +166,36 @@ body {
 
 /* END stylization for Image Slideshow */
 
-/* Hover */
+/* Image hover */
+.container {
+	position: relative;
+  	width: 100%;
+}
 
-.hover div{
+.container:hover .overlay{
+	opacity: 0.75;
+   }
+
+.overlay {
 	position: absolute;
-	top: 200px;
-	width: 100%;
+	top: 0;
+	bottom: 0;
 	right: 0;
-	background: black;
-	color: white;
-	margin-bottom: 5px;
-	font-family: sans-serif;
+	left: 0;
+	width: 100%;
 	opacity: 0;
-	visibility: hidden;
-	-webkit-transition: visibility 0s, opacity 0.5s linear; 
-	transition: visibility 0s, opacity 0.5s linear;
+	transition: .5s ease;
+	background-color: lightgray;
    }
    
-   .hover:hover{
-	cursor: pointer;
-   }
-   
-   .hover:hover div{
-	width: 150px;
-	padding: 8px 15px;
-	visibility: visible;
-	opacity: 0.7; 
-   }
+   .text {
+	color: black;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
