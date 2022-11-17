@@ -235,21 +235,21 @@ body {
 	transition: 0.3s;
 }
 
-	.resources:hover {
+.resources:hover {
 		box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
-	}
+}
 
-	.resources .resourceHeader {
+.resources .resourceHeader {
 		background-color: #32557f;
 		color: white;
 		font-size: 25px;
-	}
+}
 
-	.resources li {
+.resources li {
 		border-bottom: 1px solid #eee;
 		padding: 20px;
 		text-align: center;
-	}
+}
 
 .backgroundShape {
 	display: inline-block;
