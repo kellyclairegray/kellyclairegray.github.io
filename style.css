@@ -193,3 +193,69 @@ body {
 	visibility: visible;
 	opacity: 0.7; 
    }
+
+
+/* Resource Page */
+
+.centerPic {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.centerText {
+	text-align: center;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+}
+
+.columns {
+	float: left;
+	width: 250px;
+	padding: 8px;
+}
+
+.resources {
+	list-style-type: none;
+	border: 1px solid #eee;
+	margin: 0;
+	padding: 0;
+	-webskit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+	.resources:hover {
+		box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+	}
+
+	.resources .resourceHeader {
+		background-color: #32557f;
+		color: white;
+		font-size: 25px;
+	}
+
+	.resources li {
+		border-bottom: 1px solid #eee;
+		padding: 20px;
+		text-align: center;
+	}
+
+.backgroundShape {
+	display: inline-block;
+	width: 75%;
+	padding: 10% height: 50%;
+	border: 5px solid #32557f;
+	border-radius: 15px;
+	background-color: #32557f;
+}
+
+.content {
+	max-width: 500px;
+	margin: auto;
+}
