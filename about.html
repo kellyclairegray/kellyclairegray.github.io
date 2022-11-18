@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css" />          <!-- Link to stylesheet-->
 
 </head>
-<body>
+<body id="aboutBody">
+  <div id="bodyWithoutPopUp">
     <h1 class=" pageTitle"> About Us </h1>
     <div id="navbarID">
         <!-- NAVBAR -->
@@ -20,7 +21,6 @@
         </p>
     </div>
     <div class="about-section">
-      <!-- <h1>About Us Page</h1> -->
       <img src="StemGirls.jpeg" alt="AboutImage" width="450">
     </div>
     
@@ -32,8 +32,9 @@
             <h2>Jessie Stalter</h2>
             <p class="title">St. Louis, MO </p>
             <p>I am currently in my last semester as a Computer Science student at UK, and I excited about my future in this field! I started college as a mechanical engineering major, and eventually found my love for programming and switched majors. I really love front-end design and designing solutions that have the end user in mind. After graduation, I will be working as a software engineer.</p>
-            <p>jrstalter11@gmail.com</p>
-            <p><button class="button">Contact</button></p>
+            <div class="email">
+              <a href="mailto:jrstalter11@gmail.com">jrstalter11@gmail.com</a>
+            </div>
           </div>
         </div>
       </div>
@@ -44,8 +45,9 @@
             <h2>Kelly Claire Gray</h2>
             <p class="title">Louisville, KY</p>
             <p> I will be graduating UK with a major in Computer Science and a Mathematics minor. I really like backend software developement and over the summer I was given the opportunity to tie that in with biotechnology. I am very interested in using my knowledge to contribute to healthcare and discovering more in that area. I plan on working with the same BioTech company in Louisville, KY after I graduate. </p>
-            <p>kellyclairegray@gmail.com</p>
-            <p><button class="button">Contact</button></p>
+            <div class="email">
+              <a href="mailto:kellyclairegray@gmail.com">kellyclairegray@gmail.com</a>
+            </div>
           </div>
         </div>
       </div>
@@ -56,8 +58,9 @@
             <h2>Kavisca Kuruparanantha</h2>
             <p class="title">New York City, NY</p>
             <p>Stumbling into this major, I am have grown a passion for this major. I am a computer science major with a concentration in Cybersecurity. Come May of 2023 I will officially be a Humana associate in Louisville, Ky!</p>
-            <p>kku242@uky.edu</p>
-            <p><button class="button">Contact</button></p>
+            <div class="email">
+              <a href="mailto:kku242@uky.edu">kku242@uky.edu</a>
+            </div>
           </div>
         </div>
       </div>
@@ -68,11 +71,43 @@
             <h2>Megan Johar</h2>
             <p class="title">St. Louis, MO</p>
             <p>Throughout my college career, I have followed my two passions -- healthcare and programming -- which has manifested itself by a major in Computer Science with a Biology minor. This has opened by eyes into the world of bioinformatics and how important this field can be to the lives of everyone around the world.</p>
-            <p>meganjohar@gmail.com</p>
-            <p><button class="button">Contact</button></p>
+            <div class="email">
+              <a href="mailto:meganjohar@gmail.com">meganjohar@gmail.com</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div id="contactUsSection">
+      <button id="contactUsButton" onclick="div_show()">
+        Contact Us
+      </button>
+    </div>
+  </div>
+  <div id="contactPopUp">
+    <form id="contactUsForm" action="#" id="form" method="post" name="form">
+      <img id="closeIcon" alt="Close Icon" src="./icons/closeIcon.png" onclick ="div_hide()">
+      <h2>Contact Us</h2>
+      <hr>
+      <input id="name" name="name" placeholder="Name" type="text">
+      <input name="email" placeholder="Email" type="text">
+      <input name="subject" placeholder="Subject" type="text">
+      <textarea id="msg" name="message" placeholder="Message"></textarea>
+      <input id="submit" name="submit" type="submit" value="Send">
+    </form>
+    <h3><?php include "contactUsEmailForm.php"?></h3>
+  </div>
+
+  <script>
+    function div_show() {
+      document.getElementById('contactUsForm').style.display = "block";
+      document.getElementById('bodyWithoutPopUp').style.filter = "blur(1px)";
+    }
+
+    function div_hide(){
+      document.getElementById('contactUsForm').style.display = "none";
+      document.getElementById('bodyWithoutPopUp').style.filter = "none";
+    }
+  </script>
 </body>
 </html>
