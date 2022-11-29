@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html> 
+<head>
+    <meta charset="utf-8" />
+    <title>Interact</title>
+    <link rel="stylesheet" href="style.css" />          <!-- Link to stylesheet-->
+
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="pageTitle"> QUIZ </h1>
+        <div id="navbarID">
+            <!-- NAVBAR -->
+            <p>
+                <a class="navbarItem" href="index.html">Home</a>
+                <a class="navbarItem" href="quiz.html">Quiz</a>
+                <a class="navbarItem" href="resources.html">Resources</a>
+                <a class="navbarItem" href="about.html">About</a>
+                <a class="navbarItem" href="MentorForm.html">Mentorship</a>
+            </p>
+        </div>
+      </div>
+    <div class="form" >
+        <h2 id="quizTitle">Take a quiz about infamous women in stem!</h2>
+        <form id="form1">
+            <h3>What woman won the Nobel Prize in Physics in 1903 for her contribution to the understanding of radiation?</h3>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="marieCurie" value="0" />Rosalind Franklin</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="marieCurie" value="0" />Lise Meitner</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="marieCurie" value="10" />Marie Curie</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="marieCurie" value="0" />Barbara McClintock</label>
+            <p id="question1Wrong" style = "display: none">Incorrect. Try another answer!</p>
+            <p id="question1Right" style = "display: none">Correct! Marie Curie won the Nobel Prize in Physics in 1903 for her contribution to the understanding of radiation. She was also the first person to win two Nobel Prizes, and the only person to win in multiple sciences. Those prizes were the Nobel Prize in Physics in 1903, and the Nobel Prize in Chemistry in 1911.</p>
+
+            <h3>Who has been nicknamed “the mother of the internet”?</h3>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="radiaPerlman" value="0" />Evelyn Boyd Granville</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="radiaPerlman" value="0" />Beatrice Helen Worsley</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="radiaPerlman" value="10" />Radia Perlman</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="radiaPerlman" value="0" />Carol Shaw</label>
+            <p id="question2Wrong" style = "display: none">Incorrect. Try another answer!</p>
+            <p id="question2Right" style = "display: none">Correct! Radia Perlman is a computer programmer and network engineer most famous for her creation of the spanning-tree protocol, which was a contribution that led to our modern-day conception of the internet.</p>
+
+            <h3>Who is the only woman to have received, by herself (unshared), a Nobel Prize for Medicine?</h3>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="barbaraMcclintock" value="10" />Barbara McClintock</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="barbaraMcclintock" value="0" />Gerty Theresa Cori</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="barbaraMcclintock" value="0" />Rosalyn Sussman Yalow</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="barbaraMcclintock" value="0" />Rita Levi-Montalcini</label>
+            <p id="question3Wrong" style = "display: none">Incorrect. Try another answer!</p>
+            <p id="question3Right" style = "display: none">Correct! Barbara McClintock won the Nobel Prize in Physiology or Medicine in 1983 for the discovery of genetic transposition.</p>
+
+            <h3>The first computer programmer was a woman.</h3>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="trueFalse" value="0" />False</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="trueFalse" value="10" />True</label>
+            <p id="question4Wrong" style = "display: none">Incorrect. Try another answer!</p>
+            <p id="question4Right" style = "display: none">Correct! About a century before Konrad Zuse designed the first programmable computing machine, in the 1840s, Ada Lovelace wrote the first computer program in the world.</p>
+
+            <h3>Who was the first woman to go to space?</h3>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="valentinaTereshkova" value="0" />Mae Carol Jemison</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="valentinaTereshkova" value="0" />Ellen Ochoa</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="valentinaTereshkova"  value="10" />Valentina Tereshkova</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="valentinaTereshkova"  value="0" />Sally Ride</label>
+            <p id="question5Wrong" style = "display: none">Incorrect. Try another answer!</p>
+            <p id="question5Right" style = "display: none">Correct! On June 16, 1963, Valentina Tereshkova was launched in the spacecraft Vostok 6, which completed 48 orbits in 71 hours.</p>
+
+            <h3>Who invented signal hopping, which was a precursor to wi-fi, GPS, and bluetooth?</h3>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="hedyLamar" value="0" />Hertha Ayrton</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="hedyLamar" value="10" />Hedy Lamar</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="hedyLamar" value="0" />Edith Clark</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="hedyLamar"  value="0" />Emily Warren Roebling</label>
+            <p id="question6Wrong" style = "display: none">Incorrect. Try another answer!</p>
+            <p id="question6Right" style = "display: none">Correct! Not only did Hedy Lamar invent signal hopping, but she was also a well-known film actress.</p>
+
+            <h3>Who is known as the inventor of the first compiler?</h3>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="graceHopper" value="10" />Grace Hopper</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="graceHopper" value="0" />Anita Borg</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="graceHopper" value="0" />Adele Goldstine</label>
+            <label class="quizLabel" ><input class="quizInput" type="radio" name="graceHopper"  value="0" />Marsha Rhea Williams</label>
+            <p id="question7Wrong" style = "display: none">Incorrect. Try another answer!</p>
+            <p id="question7Right" style = "display: none">Correct! Grace Hopper is an American computer scientist and US Navy rear admiral known for inventing the compiler in addition to her other contributions to computer science.</p>
+
+            <div id="buttonDiv">
+                <button id="submitButton" type="submit" value="Submit">SUBMIT</button>
+            </div>
+            
+            </form>
+
+        <p style="display: none" id="gradeText">Your grade is: <span id="grade">__</span> / 70</p>
+    </div>
+</body>
+<script>
+    document.getElementById("form1").onsubmit=function() {
+        marieCurie = parseInt(document.querySelector('input[name = "marieCurie"]:checked').value);
+        if (marieCurie == 0) {
+            document.getElementById("question1Wrong").style = "display: block";
+            document.getElementById("question1Wrong").style = "color: red";
+            document.getElementById("question1Right").style = "display: none";
+        }
+        else {
+            document.getElementById("question1Wrong").style = "display: none";
+            document.getElementById("question1Right").style = "display: block";
+            document.getElementById("question1Right").style = "color: green";
+        }
+        radiaPerlman = parseInt(document.querySelector('input[name = "radiaPerlman"]:checked').value);
+        if (radiaPerlman == 0) {
+            document.getElementById("question2Wrong").style = "display: block";
+            document.getElementById("question2Wrong").style = "color: red";
+            document.getElementById("question2Right").style = "display: none";
+        }
+        else {
+            document.getElementById("question2Wrong").style = "display: none";
+            document.getElementById("question2Right").style = "display: block";
+            document.getElementById("question2Right").style = "color: green";
+        }
+        barbarMcclintock = parseInt(document.querySelector('input[name = "barbaraMcclintock"]:checked').value);
+        if (barbarMcclintock == 0) {
+            document.getElementById("question3Wrong").style = "display: block";
+            document.getElementById("question3Wrong").style = "color: red";
+            document.getElementById("question3Right").style = "display: none";
+        }
+        else {
+            document.getElementById("question3Wrong").style = "display: none";
+            document.getElementById("question3Right").style = "display: block";
+            document.getElementById("question3Right").style = "color: green";
+        }
+        trueFalse = parseInt(document.querySelector('input[name = "trueFalse"]:checked').value);
+        if (trueFalse == 0) {
+            document.getElementById("question4Wrong").style = "display: block";
+            document.getElementById("question4Wrong").style = "color: red";
+            document.getElementById("question4Right").style = "display: none";
+        }
+        else {
+            document.getElementById("question4Wrong").style = "display: none";
+            document.getElementById("question4Right").style = "display: block";
+            document.getElementById("question4Right").style = "color: green";
+        }
+        valentinaTereshkova = parseInt(document.querySelector('input[name = "valentinaTereshkova"]:checked').value);
+        if (valentinaTereshkova == 0) {
+            document.getElementById("question5Wrong").style = "display: block";
+            document.getElementById("question5Wrong").style = "color: red";
+            document.getElementById("question5Right").style = "display: none";
+        }
+        else {
+            document.getElementById("question5Wrong").style = "display: none";
+            document.getElementById("question5Right").style = "display: block";
+            document.getElementById("question5Right").style = "color: green";
+        }
+        hedyLamar = parseInt(document.querySelector('input[name = "hedyLamar"]:checked').value);
+        if (hedyLamar == 0) {
+            document.getElementById("question6Wrong").style = "display: block";
+            document.getElementById("question6Wrong").style = "color: red";
+            document.getElementById("question6Right").style = "display: none";
+        }
+        else {
+            document.getElementById("question6Wrong").style = "display: none";
+            document.getElementById("question6Right").style = "display: block";
+            document.getElementById("question6Right").style = "color: green";
+        }
+        graceHopper = parseInt(document.querySelector('input[name = "graceHopper"]:checked').value);
+        if (graceHopper == 0) {
+            document.getElementById("question7Wrong").style = "display: block";
+            document.getElementById("question7Wrong").style = "color: red";
+            document.getElementById("question7Right").style = "display: none";
+        }
+        else {
+            document.getElementById("question7Wrong").style = "display: none";
+            document.getElementById("question7Right").style = "display: block";
+            document.getElementById("question7Right").style = "color: green";
+        }
+
+        result = marieCurie + radiaPerlman + barbarMcclintock + trueFalse + valentinaTereshkova + hedyLamar + graceHopper;
+    
+        document.getElementById("gradeText").style = "display: block";
+        document.getElementById("grade").innerHTML = result;
+
+        return false; // required to not refresh the page every time
+    }
+
+    </script>
+</html>
