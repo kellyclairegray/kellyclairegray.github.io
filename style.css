@@ -27,7 +27,6 @@ body {
 	border-style: none;
 	justify-content: space-between;
 	word-wrap: normal;
-	
 }
 
 .navbarItem {
@@ -35,7 +34,10 @@ body {
 	font-size: 22px;
 	padding-left: 30px;
 	padding-right: 30px;
+}
 
+.navbarItem:active {
+	color: black;
 }
 
 /* About Page Styles */
@@ -231,7 +233,7 @@ textarea {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
+	width: 50%;
   }
 
 @keyframes fade {
@@ -247,10 +249,6 @@ textarea {
   	width: 100%;
 }
 
-.container:hover .overlay{
-	opacity: 0.75;
-   }
-
 .overlay {
 	position: absolute;
 	top: 0;
@@ -260,10 +258,14 @@ textarea {
 	width: 100%;
 	opacity: 0;
 	transition: .5s ease;
-	background-color: lightgray;
-   }
+	background-color: white;
+}
+
+.container:hover .overlay{
+	opacity: 0.95;
+}
    
-   .text {
+.text {
 	color: black;
 	font-size: 23px;
 	position: absolute;
@@ -273,7 +275,7 @@ textarea {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	text-align: center;
-  }
+}
 
 /* Resource Page */
 
